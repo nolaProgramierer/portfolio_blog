@@ -1,19 +1,24 @@
 <h1>Users</h1>
-<%= link_to 'Add User', new_user_path %>
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Email</th>
-  </tr>
-  <% @users.each do |user| %>
+<%= link_to 'Add User', new_user_path, class: "btn btn-primary" %>
+<table class="table table-striped">
+  <thead>
     <tr>
-      <td><%= user.name %></td>
-      <td><%= user.email %></td>
-      <td><%= link_to 'Show', user_path(user) %></td>
-      <td><%= link_to 'Edit', edit_user_path(user) %></td>
-      <td><%= link_to 'Destroy', user_path(user),
-                      method: :delete,
-                      data: { confirm: "Are you sure?"} %></td>
+      <th>Name</th>
+      <th>Email</th>
     </tr>
-  <% end %>
+  </thead>
+  <tbody>
+    <% @users.each_with_index do |user, index| %>
+      <tr>
+        <th scope="row"><%= index + 1%></th>
+        <td><%= user.name %></td>
+        <td><%= user.email %></td>
+        <td><%= link_to 'Show', user_path(user) %></td>
+        <td><%= link_to 'Edit', edit_user_path(user) %></td>
+        <td><%= link_to 'Destroy', user_path(user),
+                        method: :delete,
+                        data: { confirm: "Are you sure?"} %></td>
+      </tr>
+    <% end %>
+  </tbody>
 </table>
