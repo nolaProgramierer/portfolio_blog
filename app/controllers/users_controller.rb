@@ -20,6 +20,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if
       @user.save
+      log_in @user
       flash[:success] = "#{@user.name.upcase} has been added as a user."
       redirect_to user_path(@user)
     else
