@@ -1,4 +1,14 @@
 <% provide(:title, "Article") %>
-<p><%= @article.title %></p>
-<p><%= @article.body %></p>
+<div class="row text-center">
+  <h1><%= @article.title %></h1>
+  <p class="article-created-time">
+    <%= @article.created_at.strftime("%d %B %G") %>
+  </p>
+</div>
+<div class="row">
+  <div class="col-md-6 col-md-offset-3 article-body">
+    <%= @article.body %>
+  </div>
+</div>
+
 <%= link_to "Back", articles_path %>
