@@ -29,7 +29,7 @@ gem 'minitest-reporters', '~> 1.1', '>= 1.1.8'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 
-gem 'puma', '~> 3.4'
+
 
 # Use Unicorn as the app server
 # gem 'unicorn'
@@ -50,6 +50,7 @@ group :development do
 group :production do
   gem 'pg', '~> 0.18.4'
   gem 'rails_12factor', '~> 0.0.3'
+  gem 'puma', '~> 3.4'
 end
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
