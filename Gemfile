@@ -29,7 +29,7 @@ gem 'minitest-reporters', '~> 1.1', '>= 1.1.8'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 
-
+gem 'pg', '~> 0.18.4'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
@@ -40,7 +40,7 @@ gem 'bcrypt', '~> 3.1.7'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
-  gem 'pg', '~> 0.18.4'
+
 end
 
 group :development do
@@ -48,7 +48,6 @@ group :development do
   gem 'web-console', '~> 2.0'
 
 group :production do
-  gem 'pg', '~> 0.18.4'
   gem 'rails_12factor', '~> 0.0.3'
   gem 'puma', '~> 3.4'
 end
