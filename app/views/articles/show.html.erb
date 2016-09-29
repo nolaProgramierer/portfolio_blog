@@ -1,4 +1,14 @@
 <% provide(:title, "Article") %>
+<header class ="navbar navbar-fixed-top">
+  <div class="container">
+    <nav>
+      <ul class="nav navbar-nav navbar-left">
+        <li><%= link_to '&#10550; Home'.html_safe, articles_path %></li>
+      </ul>
+      <p class="navbar-text navbar-right">Navbar Text</p>
+    </nav>
+  </div>
+</header>
 <div class="row text-center">
   <h1><%= @article.title %></h1>
   <p class="article-created-time">
