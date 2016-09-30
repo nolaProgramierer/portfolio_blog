@@ -12,3 +12,4 @@ Rails.application.config.assets.version = '1.0'
 
 # Add articles stylesheet to precompile
 Rails.application.config.assets.precompile += %w( articles.css )
+Rails.application.config.assets.precompile += %w( users.css )
