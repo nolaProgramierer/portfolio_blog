@@ -11,5 +11,4 @@ Rails.application.config.assets.version = '1.0'
 # Rails.application.config.assets.precompile += %w( search.js )
 
 # Add articles stylesheet to precompile
-Rails.application.config.assets.precompile += %w( articles.css )
-Rails.application.config.assets.precompile += %w( users.css )
+Rails.application.config.assets.precompile += %w( articles.css users.css welcome.css )

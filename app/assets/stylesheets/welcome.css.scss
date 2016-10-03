@@ -1,0 +1,89 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+@include media-breakpoint-up(sm) {
+  #code-list {
+    font-size: 1.5em;
+  }
+}
+@include media-breakpoint-up(md) {
+  #code-list {
+    font-size: 1.9em;
+  }
+}
+@include media-breakpoint-up(lg) {
+  #code-list {
+    font-size: 2em;
+  }
+}
+
+
+body {
+	font-family: 'BlinkMacSystemFont', 'Lucida Grande', 'Segoe UI', Ubuntu, Cantarell, sans-serif;
+	color: white;
+}
+#code-bckgrd {
+	height: 600px;
+	width: 100%;
+	background: linear-gradient(to right bottom, #2f3441 50%, #212531 50%);
+	position: relative;
+}
+
+/* colors */
+#ruby-code {
+	color: white;
+}
+.ruby-code {
+	color: DeepSkyBlue;
+}
+.attributes {
+	color: SandyBrown;
+}
+.class {
+	color: LightYellow;
+}
+#class {
+	text-decoration:underline;
+}
+.code-vars {
+	color: LightGrey;
+}
+.string {
+	color: yellow;
+}
+.string-instance {
+	color: DimGray
+}
+
+.first-indent {
+	margin-left: 10px;
+}
+.second-indent {
+	margin-left: 20px;
+}
+
+#code-output {
+	position: absolute;
+	/*top: 330px;*/
+	top:47%;
+	/*right: 50px;*/
+	right: 5%;
+}
+#code-list {
+	font-size: 1.9em;
+}
+#code-output ul {
+	list-style :none;
+}
+#code-list li:last-child {
+	color: grey;
+}
+#code-list li:nth-child(2) a,
+#code-list li:nth-child(3) a  {
+	color: inherit;
+	text-decoration: none;
+}
+#code-list li:nth-child(2) a:hover,
+#code-list li:nth-child(3) a:hover {
+	text-decoration:underline;
+}
