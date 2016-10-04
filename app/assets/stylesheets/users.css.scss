@@ -2,13 +2,13 @@
 @import "bootstrap";
 
 /* universal */
-body {
+#users-container {
   padding-top: 60px;
 }
-section {
+#users-container section {
   overflow: auto;
 }
-textarea {
+#users-container textarea {
   resize: vertical;
 }
 .center {
@@ -19,16 +19,16 @@ textarea {
 }
 
 /* typography */
-h1, h2, h3, h4, h5, h6 {
-  line-height: 1;
-}
-h1 {
+// #users-container h1, h2, h3, h4, h5, h6 {
+//   line-height: 1;
+// }
+#users-container h1 {
   font-size: 3em;
   letter-spacing: -1px;
   margin-margin: 30px;
   text-align: center;
 }
-h2 {
+#users-container h2 {
   font-size: 2em;
   letter-spacing: -1px;
   margin-bottom: 30px;
@@ -36,7 +36,7 @@ h2 {
   font-weight: normal;
   color: #777;
 }
-p {
+#users-container p {
   font-size: 1.1em;
   line-height: 1.7em;
 }
@@ -66,12 +66,12 @@ $gary-medium-light: #eaeaea;
   box-sizing:           border-box;
 }
 /* forms */
-input, textarea, select, .uneditable-input {
+#users-container input, textarea, select, .uneditable-input {
   border: 1px solid #bbb;
   width: 100%;
   margin-bottom: 15px;
   @include box_sizing;
 }
-input {
+#users-container input {
   height: auto !important;
 }

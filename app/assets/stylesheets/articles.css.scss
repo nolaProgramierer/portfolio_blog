@@ -8,7 +8,7 @@ $gray-medium-light: #c2c2c2;
 $sans-serif-font: 'Raleway', sans-serif;
 
 /* universal */
-body {
+#articles-container {
     font-family: "Merriweather", serif;
     letter-spacing: 0.07rem;
     font-size: 2.5rem;
@@ -18,10 +18,10 @@ body {
     padding-top: 90px;
 }
 /* typography */
-h1, h2, h3, h4, h5, h6 {
-  line-height: 1;
-}
-h1 {
+// #articles-container h1, h2, h3, h4, h5, h6 {
+//   line-height: 1;
+// }
+#articles-container h1 {
   font-size: 2.5em;
   letter-spacing: -1px;
   margin-margin: 30px;
@@ -42,21 +42,21 @@ h1 {
 }
 
 /* navbar */
-.navbar-fixed-top .navbar-nav > li > a:hover,
-.navbar-fixed-top .navbar-nav > li > a:focus {
+#articles-container .navbar-fixed-top .navbar-nav > li > a:hover,
+#articles-container .navbar-fixed-top .navbar-nav > li > a:focus {
     background-color: #fff;
     border-style: solid;
     border-width: 1px;
     border-color: $gray-medium-light;
     border-radius: 7px;
 }
-.navbar-fixed-top .navbar-nav > li > a {
+#articles-container .navbar-fixed-top .navbar-nav > li > a {
   color: $gray-medium-light;
 }
-.navbar-fixed-top .navbar-text {
+#articles-container .navbar-fixed-top .navbar-text {
   color: $gray-medium-light;
 }
-.navbar-fixed-top  {
+#articles-container .navbar-fixed-top  {
   padding-top: 20px;
   // font-family: Verdana, Geneva, sans-serif;
   font-family: $sans-serif-font;

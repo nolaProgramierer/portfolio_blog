@@ -10,13 +10,15 @@
   <link href="https://fonts.googleapis.com/css?family=Merriweather:Light|Raleway" rel="stylesheet">
 </head>
 <body>
-  <%= render 'layouts/articles_header' %>
-  <div class="container-fluid">
-    <% flash.each do |message_type, message| %>
-      <%= content_tag(:div, message, class: "alert alert-#{message_type}") %>
-    <% end %>
-    <%= yield %>
-    <%= debug(params) if Rails.env.development? %>
+  <div id="articles-container">
+    <%= render 'layouts/articles_header' %>
+    <div class="container-fluid">
+      <% flash.each do |message_type, message| %>
+        <%= content_tag(:div, message, class: "alert alert-#{message_type}") %>
+      <% end %>
+      <%= yield %>
+      <%= debug(params) if Rails.env.development? %>
+    </div>
   </div>
 </body>
 </html>
