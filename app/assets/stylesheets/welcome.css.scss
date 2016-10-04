@@ -3,6 +3,8 @@
 
 $gray-medium-light: #c2c2c2;
 $sans-serif-font: 'Raleway', sans-serif;
+$articles-serif-font: 'Merriweather', serif;
+
 
 #welcome-container {
 	font-family: 'BlinkMacSystemFont', 'Lucida Grande', 'Segoe UI', Ubuntu, Cantarell, sans-serif;
@@ -45,29 +47,26 @@ $sans-serif-font: 'Raleway', sans-serif;
 #code-list li:nth-child(3) a:hover {
 	text-decoration:underline;
 }
-.articles-list {
-	font-family: "Merriweather", serif;
+.articles-section {
+	font-family: $articles-serif-font;
 	letter-spacing: 0.07rem;
 	font-size: 2.5rem;
 	line-height: 1.25em;
 	color: #3A4145;
 	font-weight: 300;
 }
-.articles-list a {
+.articles-section a {
 	color: inherit;
 }
-.articles-list a:hover {
+.articles-section a:hover {
 	text-decoration: none;
 }
-// .welcome-container h1, h2, h3, h4, h5, h6 {
-//   line-height: 1;
-// }
-.welcome-container h1 {
-  font-size: 2.5em;
-  letter-spacing: -1px;
-  margin-margin: 30px;
-  font-family: $sans-serif-font;
+.articles-section h1 {
+	font-family: $sans-serif-font;
+	font-weight: 300;
+	color: #3A4145;
 }
+
 
 /* colors */
 #ruby-code {
