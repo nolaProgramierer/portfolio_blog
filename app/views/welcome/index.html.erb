@@ -46,3 +46,17 @@
         </ul>
     </div>
   </div>
+  <section class="articles-list">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+
+      <% @articles.each do |article| %>
+      <h1 class="text-center">
+        <%= link_to article.title, article_path(article) %>
+      </h1>
+        <%= article.body.truncate_words(33) %>
+      <% end %>
+
+    </div>
+  </div>
+</section>
