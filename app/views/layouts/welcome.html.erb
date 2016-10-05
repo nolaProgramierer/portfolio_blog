@@ -8,8 +8,8 @@
   <%= render 'layouts/shim' %>
 </head>
 <body>
-  <div id="welcome-container">
     <div class="container-fluid">
+      <div id="welcome-container">
       <% flash.each do |message_type, message| %>
         <%= content_tag(:div, message, class: "alert alert-#{message_type}") %>
       <% end %>

@@ -8,9 +8,9 @@
   <%= render 'layouts/shim' %>
 </head>
 <body>
-  <div id="users-container">
   <%= render 'layouts/users_header' %>
     <div class="container-fluid">
+      <div id="users-container">
       <% flash.each do |message_type, message| %>
         <%= content_tag(:div, message, class: "alert alert-#{message_type}") %>
       <% end %>
