@@ -8,6 +8,7 @@ $gray-medium-light: #c2c2c2;
 $sans-serif-font: 'Raleway', sans-serif;
 
 /* universal */
+
 #articles-container {
     font-family: "Merriweather", serif;
     letter-spacing: 0.07rem;
@@ -34,25 +35,32 @@ $sans-serif-font: 'Raleway', sans-serif;
 }
 
 /* navbar */
-#articles-container .navbar-fixed-top .navbar-nav > li > a:hover,
-#articles-container .navbar-fixed-top .navbar-nav > li > a:focus {
-    background-color: #fff;
-    border-style: solid;
-    border-width: 1px;
-    border-color: $gray-medium-light;
-    border-radius: 7px;
+#articles-nav .navbar-fixed-top .navbar-nav > li > a:hover,
+#articles-nav .navbar-fixed-top .navbar-nav > li > a:focus {
+  background-color: #fff;
+  border-style: solid;
+  border-width: 1px;
+  border-color: $gray-medium-light;
+  border-radius: 7px;
 }
-#articles-container .navbar-fixed-top .navbar-nav > li > a {
+#articles-nav .navbar-fixed-top .navbar-nav > li > a {
   color: $gray-medium-light;
 }
-#articles-container .navbar-fixed-top .navbar-text {
-  color: $gray-medium-light;
-}
-#articles-container .navbar-fixed-top  {
+#articles-nav .navbar-fixed-top  {
   padding-top: 20px;
-  // font-family: Verdana, Geneva, sans-serif;
   font-family: $sans-serif-font;
-  font-size: 0.8em;
+  font-size: 1.5em;
   letter-spacing: -1px;
-  // border-bottom: 1px solid #c2c2c2;
+}
+#articles-nav .navbar-fixed-top p > a {
+  color: $gray-medium-light;
+}
+#articles-nav .navbar-fixed-top p > a:hover,
+#articles-nav .navbar-fixed-top p > a:focus {
+  background-color: #fff;
+  border-style: solid;
+  border-width: 1px;
+  border-color: $gray-medium-light;
+  border-radius: 7px;
+  text-decoration: none;
 }
