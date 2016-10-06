@@ -47,17 +47,3 @@ $('document').ready(function() {
     $(this).css('color', '')
   }); // end hover
 }); //end ready
-
-// $('document').on('turbolinks:load', function() {
-// 	$('.chevron').click(function() {
-// 		$('html, body').animate(
-// 		{scrollTop: $('.articles-section').offset().top},
-// 		 1000);
-// 		 return false;
-// 	}); // end click
-//   $('.chevron').hover(function() {
-//     $(this).css('color', 'white')
-//   }, function() {
-//     $(this).css('color', '')
-//   }); // end hover
-// }); //end ready
