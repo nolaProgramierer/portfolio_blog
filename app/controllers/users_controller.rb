@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
   include SessionsHelper
-  before_action :require_login
-  
+  before_action :require_login, except: [:index]
+
   def index
     @users = User.all
   end
