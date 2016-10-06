@@ -112,3 +112,27 @@ $articles-serif-font: 'Merriweather', serif;
 	/*right: 50px;*/
 	right: 2.5%;
 }
+
+
+.chevron::before {
+	border-style: solid;
+	border-width: 0.15em 0.15em 0 0;
+	content: '';
+	display: inline-block;
+	/*height: 0.45em;*/
+	height: 2em;
+	left: 50%;
+	position: absolute;
+	/*top: 0.15em;*/
+	transform: rotate(-45deg);
+	vertical-align: top;
+	/*width: 0.45em;*/
+	width: 2em;
+}
+.chevron.bottom:before {
+	top: 40%;
+	transform: rotate(135deg);
+}
+#chevron-pointer > a {
+	color: darkgray;
+}
