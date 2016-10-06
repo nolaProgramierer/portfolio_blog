@@ -1,19 +1,26 @@
 <% provide(:article, "Article Listing") %>
 <h1>Article Listing</h1>
 <%= link_to "New Article", new_article_path %>
-<table>
+<table class="table" id="article-listing-table">
+  <thead>
+    <tr>
+      <th><strong>Title</strong></th>
+      <th><strong>Article</strong></th>
+      <% @articles.each do |article| %>
+    </tr>
+  </thead>
+  <tbody>
   <tr>
-    <th><strong>Title</strong></th>
-    <th><strong>Article</strong></th>
-    <% @articles.each do |article| %>
-  </tr>
-    <td><%= article.title %></td>
-    <td><%= article.body %></td>
-    <td><%= link_to "Show", article_path(article) %></td>
-    <td><%= link_to "Edit", edit_article_path(article) %></td>
-    <td><%= link_to "Delete", article_path(article),
-            method: :delete,
-            data: { confirm: "Are you sure?"} %></td>
+    <td class="col-md-2"><%= article.title %></td>
+    <td class="col-md-10"><%= article.body %></td>
+    <tr class="col-md-2">
+      <td><%= link_to "Show", article_path(article) %></td>
+      <td><%= link_to "Edit", edit_article_path(article) %></td>
+      <td><%= link_to "Delete", article_path(article),
+              method: :delete,
+              data: { confirm: "Are you sure?"} %></td>
+    </tr>
     <% end %>
   </tr>
+  </tbody>
 </table>

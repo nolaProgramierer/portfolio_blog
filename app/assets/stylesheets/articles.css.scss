@@ -16,7 +16,6 @@ $sans-serif-font: 'Raleway', sans-serif;
     line-height: 1.25em;
     color: #3A4145;
     font-weight: 300;
-    padding-top: 90px;
 }
 #articles-container h1 {
   font-family: $sans-serif-font;
@@ -35,28 +34,28 @@ $sans-serif-font: 'Raleway', sans-serif;
 }
 
 /* navbar */
-#articles-nav .navbar-fixed-top .navbar-nav > li > a:hover,
-#articles-nav .navbar-fixed-top .navbar-nav > li > a:focus {
+#articles-nav .navbar-static-top .navbar-nav > li > a:hover,
+#articles-nav .navbar-static-top .navbar-nav > li > a:focus {
   background-color: #fff;
   border-style: solid;
   border-width: 1px;
   border-color: $gray-medium-light;
   border-radius: 7px;
 }
-#articles-nav .navbar-fixed-top .navbar-nav > li > a {
+#articles-nav .navbar-static-top .navbar-nav > li > a {
   color: $gray-medium-light;
 }
-#articles-nav .navbar-fixed-top  {
+#articles-nav .navbar-static-top  {
   padding-top: 20px;
   font-family: $sans-serif-font;
   font-size: 1.5em;
   letter-spacing: -1px;
 }
-#articles-nav .navbar-fixed-top p > a {
+#articles-nav .navbar-static-top p > a {
   color: $gray-medium-light;
 }
-#articles-nav .navbar-fixed-top p > a:hover,
-#articles-nav .navbar-fixed-top p > a:focus {
+#articles-nav .navbar-static-top p > a:hover,
+#articles-nav .navbar-static-top p > a:focus {
   background-color: #fff;
   border-style: solid;
   border-width: 1px;
@@ -64,3 +63,6 @@ $sans-serif-font: 'Raleway', sans-serif;
   border-radius: 7px;
   text-decoration: none;
 }
+// #article-listing-table th:nth-child(1) {
+//   width: 10%;
+// }

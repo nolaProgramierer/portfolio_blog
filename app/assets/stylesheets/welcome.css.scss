@@ -11,7 +11,7 @@ $articles-serif-font: 'Merriweather', serif;
 	color: white;
 }
 #code-bckgrd {
-	height: 600px;
+	height: 800px;
 	width: 100%;
 	background: linear-gradient(to right bottom, #2f3441 50%, #212531 50%);
 	position: relative;
@@ -28,8 +28,8 @@ $articles-serif-font: 'Merriweather', serif;
 #code-list {
 	// font-size: 2em;
   @media (min-width: 400px) {font-size: 1.25em;}
-  @media (min-width: 800px) { font-size: 1.8em;}
-  @media (min-width: 1200px) { font-size: 2.1em;}
+  @media (min-width: 800px) { font-size: 1.9em;}
+  @media (min-width: 1200px) { font-size: 2.3em;}
 }
 
 #code-output ul {
@@ -66,8 +66,12 @@ $articles-serif-font: 'Merriweather', serif;
 	font-weight: 300;
 	color: #3A4145;
 }
-
-
+.article-created-time {
+  color: $gray-medium-light;
+  font-size: 1.4rem;
+  // font-family: Verdana, Geneva, sans-serif;
+  font-family: $sans-serif-font;
+}
 /* colors */
 #ruby-code {
 	color: white;
@@ -104,7 +108,7 @@ $articles-serif-font: 'Merriweather', serif;
 #code-output {
 	position: absolute;
 	/*top: 330px;*/
-	top:47%;
+	top:65%;
 	/*right: 50px;*/
-	right: 5%;
+	right: 2.5%;
 }
