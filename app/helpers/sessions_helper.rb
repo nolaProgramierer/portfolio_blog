@@ -16,4 +16,11 @@ module SessionsHelper
     session.delete(:user_id)
     @current_user = nil
   end
+
+  # Controller test for logged in users to prevent pages from being viewed
+  def require_login
+    if current_user.nil?
+      redirect_to login_path
+    end
+  end
 end
