@@ -45,7 +45,8 @@ $articles-serif-font: 'Merriweather', serif;
 }
 #code-list li:nth-child(2) a:hover,
 #code-list li:nth-child(3) a:hover {
-	text-decoration:underline;
+	text-decoration: none;
+	color: $gray-medium-light;
 }
 .articles-section {
 	font-family: $articles-serif-font;

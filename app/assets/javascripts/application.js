@@ -47,4 +47,6 @@ $('document').ready(function() {
   }, function() {
     $(this).css('color', '')
   }); // end hover
+  // Bootstrap tooltip js
+  $('[data-toggle="tooltip"]').tooltip();
 }); //end ready
