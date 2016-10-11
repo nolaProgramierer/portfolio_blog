@@ -1,18 +1,18 @@
 <% provide(:title, "Article") %>
 
 <div class="row text-center">
-  <h1><%= @article.title %></h1>
+  <h1><%= @article.title.html_safe %></h1>
   <p class="article-created-time">
     <%= @article.created_at.strftime("%d %B %G") %>
   </p>
 </div>
 <div class="row">
-  <div class="col-md-6 col-md-offset-3 article-body">
-    <%= @article.body %>
+  <div class="col-md-8 col-md-offset-2 article-body">
+    <%= @article.body.html_safe %>
   </div>
 </div>
 <div class="row">
-    <div class= "col-md-6 col-md-offset-3">
+    <div class= "col-md-8 col-md-offset-2">
         <%= render "disqus" %>
     </div>
   </div>

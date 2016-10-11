@@ -54,13 +54,13 @@
     </div>
     <section class="articles-section">
     <div class="row">
-      <div class="col-md-6 col-md-offset-3">
+      <div class="col-md-8 col-md-offset-2">
 
         <% @articles.each do |article| %>
         <h1 class="text-center">
           <%= link_to article.title, article_path(article) %>
         </h1>
-          <%= article.body.truncate_words(33) %>
+          <%= article.body.truncate_words(50).html_safe %>
           <p class="article-created-time">
             <%= article.created_at.strftime("%d %B %G") %>
           </p>
