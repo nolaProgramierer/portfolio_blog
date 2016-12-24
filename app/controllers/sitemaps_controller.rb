@@ -1,10 +1,9 @@
 class SitemapsController < ApplicationController
 
-  layout nil
   def index
-    headers['Content-Type'] = 'application/xml'
-    respond_to do |format|
-      format.xml { @articles = Article.all }
-    end
+      @articles = Article.all
+      respond_to do |format|
+          format.xml { render layout: false }
+      end
   end
 end

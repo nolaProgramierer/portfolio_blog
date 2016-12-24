@@ -2,15 +2,14 @@ Rails.application.routes.draw do
 
   # get 'articles/new'
 
-  get     'login' =>  'sessions#new'
-  post    'login' =>  'sessions#create'
-  delete  'logout' => 'sessions#destroy'
-
+  get     'login'   =>  'sessions#new'
+  post    'login'   =>  'sessions#create'
+  delete  'logout'  => 'sessions#destroy'
+  get     'sitemap' => 'sitemaps#index', :format => 'xml'
   root 'welcome#index'
   resources :users
   resources :articles
-  resources :sitemaps
-  get 'sitemap' => 'sitemaps#index', :format => 'xml'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
