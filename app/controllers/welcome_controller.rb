@@ -1,5 +1,4 @@
 class WelcomeController < ApplicationController
-  include WelcomeHelper
 
   def index
     @articles = Article.all
