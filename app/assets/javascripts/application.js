@@ -50,12 +50,3 @@ $('document').ready(function() {
   // Bootstrap tooltip js
   $('[data-toggle="tooltip"]').tooltip();
 }); //end ready
-
-/* http://prismjs.com/download.html?themes=prism&languages=markup+css+clike+javascript */
-var _self = (typeof window !== 'undefined')
-	? window   // if in browser
-	: (
-		(typeof WorkerGlobalScope !== 'undefined' && self instanceof WorkerGlobalScope)
-		? self // if in worker
-		: {}   // if in node js
-	);
