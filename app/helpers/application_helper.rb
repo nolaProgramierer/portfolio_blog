@@ -1,7 +1,5 @@
 module ApplicationHelper
 
-# require 'coderay'
-
   def full_title(page_title = '')
     base_title = "Glenn's Ruby/Rails blog"
     if page_title.empty?
