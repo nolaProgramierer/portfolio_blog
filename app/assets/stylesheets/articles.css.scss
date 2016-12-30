@@ -35,7 +35,9 @@ $sans-serif-font: 'Raleway', sans-serif;
 #article-listing-table {
   font-size: .5em;
 }
-
+.pagination {
+  font-size: .50em;
+}
 /* navbar */
 #articles-nav .navbar-static-top .navbar-nav > li > a:hover,
 #articles-nav .navbar-static-top .navbar-nav > li > a:focus {

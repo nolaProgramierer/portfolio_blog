@@ -3,7 +3,7 @@ class ArticlesController < ApplicationController
   before_action :require_login, except: [:show]
 
   def index
-    @articles = Article.all
+    @articles = Article.all.paginate(page: params[:page], per_page: 1)
   end
 
   def show
