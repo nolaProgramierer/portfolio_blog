@@ -35,19 +35,21 @@ $articles-serif-font: 'Merriweather', serif;
 #code-output ul {
 	list-style :none;
 }
-#code-list li:last-child {
-	color: grey;
-	font-size: 60%;
-}
-#code-list li:nth-child(2) a,
-#code-list li:nth-child(3) a  {
-	color: inherit;
-	text-decoration: none;
-}
-#code-list li:nth-child(2) a:hover,
-#code-list li:nth-child(3) a:hover {
-	text-decoration: none;
-	color: $gray-medium-light;
+#code-list li {
+	&:last-child {
+		color: grey;
+		font-size: 60%;
+	}
+	&:nth-child(2) a,
+	&:nth-child(3) a,
+	&:nth-child(5) a {
+		color: $gray-medium-light;
+		text-decoration: none;
+		&:hover  {
+			text-decoration: none;
+			color: inherit;
+		}
+	}
 }
 .articles-section {
 	font-family: $articles-serif-font;
@@ -57,25 +59,24 @@ $articles-serif-font: 'Merriweather', serif;
 	color: #3A4145;
 	font-weight: 300;
 	padding-top: 20px;
-}
-.articles-section a {
-	color: inherit;
-}
-.articles-section a:hover {
-	text-decoration: none;
-}
-.articles-section h1 {
-	font-family: $sans-serif-font;
-	font-weight: 300;
-	color: #3A4145;
+	a {
+		color: inherit;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+	h1 {
+		font-family: $sans-serif-font;
+		font-weight: 300;
+		color: #3A4145;
+	}
 }
 .article-created-time {
   color: $gray-medium-light;
   font-size: 1.4rem;
-  // font-family: Verdana, Geneva, sans-serif;
   font-family: $sans-serif-font;
 }
-/* colors */
+/*  code colors */
 #ruby-code {
 	color: white;
 }
