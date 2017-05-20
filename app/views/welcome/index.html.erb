@@ -61,7 +61,8 @@
         <h1 class="text-center">
           <%= link_to article.title, article_path(article) %>
         </h1>
-          <%= article.body.truncate_words(75).html_safe %>
+          <%= Nokogiri::HTML.parse(article.body).css('p').first.text %>
+          <%# article.body.truncate_words(70).html_safe %>
           <p class="article-created-time">
             <%= article.created_at.strftime("%d %B %G") %>
           </p>
