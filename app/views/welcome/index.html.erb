@@ -66,6 +66,9 @@
         </h1>
           <%= Nokogiri::HTML.parse(article.body).css('p').first.text %>
           <%# article.body.truncate_words(70).html_safe %>
+          <p>
+            ...
+          </p>
           <p class="article-created-time">
             <%= article.created_at.strftime("%d %B %G") %>
           </p>
