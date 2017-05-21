@@ -49,4 +49,5 @@ $('document').ready(function() {
   }); // end hover
   // Bootstrap tooltip js
   $('[data-toggle="tooltip"]').tooltip();
-}); //end ready
+}); // end click
+// }); //end ready
