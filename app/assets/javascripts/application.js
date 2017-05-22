@@ -46,6 +46,7 @@ $('document').ready(function() {
         $(window).scrollTop(0);
         $('html').css({display: 'block'});
         smoothScrollTo(hashURL);
+        location.hash = "";
     } else {
         $('html').css({display: 'block'});
     }
