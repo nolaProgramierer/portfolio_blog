@@ -36,18 +36,56 @@ $(window).scroll( function(){
 });
 
 $('document').ready(function() {
+
+
+
+
+  $('html').css({display: 'none'});
+    var hashURL = location.hash;
+    if(hashURL != "" && hashURL.length > 1){
+        $(window).scrollTop(0);
+        $('html').css({display: 'block'});
+        smoothScrollTo(hashURL);
+    } else {
+        $('html').css({display: 'block'});
+    }
+
+function smoothScrollTo(anchor) {
+    var duration= 2000; //time (milliseconds) it takes to reach anchor point
+    var targetY = $(anchor).offset().top;
+    $("html, body").animate({
+        "scrollTop" : targetY
+    }, duration);
+}
+
+
+
 	$('.chevron').click(function() {
 		$('html, body').animate(
 		{scrollTop: $('.articles-section').offset().top},
 		 1000);
 		 return false;
 	}); // end click
+
   $('.chevron').hover(function() {
     $(this).css('color', 'white')
   }, function() {
     $(this).css('color', '')
   }); // end hover
+
   // Bootstrap tooltip js
   $('[data-toggle="tooltip"]').tooltip();
-}); // end click
-// }); //end ready
+
+
+  $('#back-button').click(function(){
+    console.log("Back button clicked.");
+
+
+  }); // end click
+
+
+
+
+
+
+}); // end ready
