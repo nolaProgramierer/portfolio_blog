@@ -59,3 +59,5 @@ end
   gem 'spring'
   gem 'coderay', '~> 1.1', '>= 1.1.1'
   gem 'will_paginate', '~> 3.1'
+
+  
