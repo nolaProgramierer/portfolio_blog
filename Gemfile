@@ -60,4 +60,4 @@ end
   gem 'coderay', '~> 1.1', '>= 1.1.1'
   gem 'will_paginate', '~> 3.1'
 
-  
+  gem 'json', '~> 1.8', '>= 1.8.3'
